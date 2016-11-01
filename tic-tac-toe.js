@@ -1,19 +1,16 @@
 $(function() {
+  var turn = 1;
   $('.square').click(function() {
-    var changeSquare = $(this).text();
+    var currentSquare = $(this).text();
     var $this = $(this);
-    if (changeSquare === '') {
+    if (currentSquare === '') {
+    if (turn === 1 && currentSquare === '')  {
       $this.text('O');
-    } else if (changeSquare === 'O') {
-      $this.text('X');
+      turn = 0;
     } else {
-      $this.text('');
+      $this.text('X');
+      turn = 1;
     }
-
-    // $(this).text('O');
-    // if ($(this).text === 'O') {
-    //   changeIt.text('X');
-    // }
-
+  }
   });
 });
