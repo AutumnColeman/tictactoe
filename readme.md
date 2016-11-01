@@ -8,7 +8,7 @@ Create tic-tac-toe.html consisting of a 3x3 grid of button elements. Give each o
 Download jquery.js and copy to your directory.
 Put <script src="jquery.js"></script> in the head section of your page.
 Create tic-tac-toe.js in your directory.
-Put '' in the head section of your page just below the jQuery.
+Put <script src="tic-tac-toe.js"></script> in the head section of your page just below the jQuery.
 Give each of the buttons in the grid the same class, say "square".
 
 ##Step 2: Clickable Buttons
