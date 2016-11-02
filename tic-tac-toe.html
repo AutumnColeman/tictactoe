@@ -4,30 +4,41 @@
     <meta charset="utf-8">
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
     <script src="jquery.js"></script>
     <script src="tic-tac-toe.js"></script>
   </head>
   <body>
-    <h1>Tic Tac Toe</h1>
+    <h1>Tic Tac Toe</h1><br>
     <p class = "banner"></p>
+    <div class="scoreboard">
+      <p>Player 1:</p><p class="playerO"></p>
+      <p>Player 2:</p><p class="playerX"></p>
+    </div>
     <table>
       <tr>
         <td><button type="button" id="tl" class="square"></button></td>
-        <td><button type="button" id="tm" class="square"></button></td>
+        <td class="vertical"><button type="button" id="tm" class="square"></button></td>
         <td><button type="button" id="tr" class="square"></button></td>
       </tr>
       <tr>
-        <td><button type="button" id="ml" class="square"></button></td>
-        <td><button type="button" id="mm" class="square"></button></td>
-        <td><button type="button" id="mr" class="square"></button></td>
+        <td class="horizontal"><button type="button" id="ml" class="square"></button></td>
+        <td class="horizontal vertical"><button type="button" id="mm" class="square"></button></td>
+        <td class="horizontal"><button type="button" id="mr" class="square"></button></td>
       </tr>
       <tr>
         <td><button type="button" id="bl" class="square"></button></td>
-        <td><button type="button" id="bm" class="square"></button></td>
+        <td class="vertical"><button type="button" id="bm" class="square"></button></td>
         <td><button type="button" id="br" class="square"></button></td>
       </tr>
+      <tr>
+        <td></td>
+        <td>
+          <button type="button" class="again">Play Again?</button>
+        </td></tr>
     </table>
+
 
   </body>
 </html>

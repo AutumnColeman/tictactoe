@@ -1,5 +1,8 @@
 $(function() {
   var turn = 1;
+  var playerO = '0';
+  var playerX = '0';
+  $('.again').hide();
   $('.square').click(function() {
     var currentSquare = $(this).text();
     var $this = $(this);
@@ -22,7 +25,10 @@ $(function() {
     // console.log(JSON.stringify(board)); checks the state of the board for debugging
     var winner = tictactoe(board);
     if (winner) {
+      $('.again').show().text();
       $('.banner').text(winner + ' wins!');
+      $('.playerO').text(playerO);
+      $('.playerX').text(playerX);
     } else {
       return;
     }

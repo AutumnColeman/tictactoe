@@ -1,9 +1,12 @@
 body {
   height: 100%;
   background-color: #2DD2D2;
+  background-image: url("images/notebook2.jpg");
+  background-size: cover;
+
 }
 h1 {
-  font-family: 'Coiny', cursive;
+  font-family: 'Cabin Sketch', cursive;
   color: red;
   text-align: center;
   font-size: 4em;
@@ -16,23 +19,76 @@ button {
   width: 200px;
   display: block;
   background-color: #EFEFEF;
-  font-family: 'Coiny', cursive;
-
+  font-family: 'Cabin Sketch', cursive;
+  background: transparent;
+  border: none;
 }
 table {
-  height: 100%;
-  position: relative;
-  margin-left: 50%;
-  margin-top: 26%;
-  transform: translate(-50%, -50%);
-  display: inline-block;
-
+  text-align: center;
+  /*justify-content: center;
+  width: 400px;
+  left: 0;
+  right: 0;
+  margin-top: 111px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  text-align: center;*/
+  justify-content: center;
+  width: 400px;
+  left: 0;
+  /* height: 100%; */
+  /* right: 0; */
+  margin-top: 111px;
+  margin-left: auto;
+  margin-right: 26%;
 }
 
 .banner {
   color: red;
   font-size: 4em;
-  font-family: 'Coiny', cursive;
+  font-family: 'Cabin Sketch', cursive;
   text-align: center;
   margin: 0;
+  background-color: transparent;
+}
+
+.border {
+  /*width: 12px;*/
+  height: 22px;
+}
+
+.again {
+  font-size: 3em;
+  color: red;
+  display: block;
+  background-color: #EFEFEF;
+  font-family: 'Cabin Sketch', cursive;
+  background: transparent;
+  border: none;
+}
+
+.scoreboard {
+  float: left;
+  margin-left: 6%;
+  margin-top: 5%;
+  font-family: 'Cabin Sketch', cursive;
+  color: red;
+  font-size: 2em;
+}
+.score1, .score2 {
+  font-family: 'Cabin Sketch', cursive;
+  color: red;
+  margin: 0;
+  font-size: 2em;
+}
+
+td.horizontal {  /*thanks Johnny*/
+  border-top: 8px solid red;
+  border-bottom: 8px solid red;
+}
+
+td.vertical {  /*thanks Johnny*/
+  border-left: 8px solid red;
+  border-right: 8px solid red;
 }
