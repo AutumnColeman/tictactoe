@@ -90,4 +90,4 @@ td.vertical {  /*thanks Johnny*/
   border-left: 8px solid red;
   border-right: 8px solid red;
 }
-button:focus {outline: dashed red;} /*removes blue border css-styled button in Chrome 
+button:focus {outline: dashed red;}  
